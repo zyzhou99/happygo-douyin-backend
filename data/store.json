@@ -1,0 +1,32 @@
+{
+  "orders": {
+    "TEST20251124-0001": {
+      "out_order_no": "TEST20251124-0001",
+      "status": "PAID",
+      "created_at": "2025-11-25T02:30:26.839Z",
+      "updated_at": "2025-11-25T02:30:26.840Z",
+      "amount_fen": 0,
+      "product_id": null,
+      "user_id": null,
+      "douyin_order_id": "DOUYIN-123456"
+    }
+  },
+  "callbacks": [
+    {
+      "out_order_no": "TEST20251124-0001",
+      "douyin_order_id": "DOUYIN-123456",
+      "event_type": "pay_success",
+      "payload": {
+        "out_order_no": "TEST20251124-0001",
+        "order_id": "DOUYIN-123456",
+        "event_type": "pay_success",
+        "amount_fen": 100
+      },
+      "ts": 1764037826839,
+      "processed": 1
+    }
+  ],
+  "idempotency": {
+    "TEST20251124-0001:pay_success:1764037826838": 1764037826838
+  }
+}
